@@ -1,0 +1,117 @@
+<div class="container">
+    <div class="content">
+        <button (click)="toggleOverlay(true)">Toggle Overlay</button>
+        <button
+            (click)="toggleBodyStyles = !toggleBodyStyles"
+            [class.on]="toggleBodyStyles"
+        >Toggle Body Styles</button>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi laborum debitis odio fugiat incidunt
+            a deserunt voluptatum suscipit. Cupiditate asperiores neque magni reiciendis adipisci maiores dignissimos
+            corrupti aliquam consequatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime quasi aut exercitationem reiciendis
+            mollitia ex, perspiciatis praesentium nesciunt minima inventore quam, blanditiis dolorum. Eligendi neque
+            culpa pariatur aliquam amet.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi laborum debitis odio fugiat incidunt
+            a deserunt voluptatum suscipit. Cupiditate asperiores neque magni reiciendis adipisci maiores dignissimos
+            corrupti aliquam consequatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime quasi aut exercitationem reiciendis
+            mollitia ex, perspiciatis praesentium nesciunt minima inventore quam, blanditiis dolorum. Eligendi neque
+            culpa pariatur aliquam amet.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi laborum debitis odio fugiat incidunt
+            a deserunt voluptatum suscipit. Cupiditate asperiores neque magni reiciendis adipisci maiores dignissimos
+            corrupti aliquam consequatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime quasi aut exercitationem reiciendis
+            mollitia ex, perspiciatis praesentium nesciunt minima inventore quam, blanditiis dolorum. Eligendi neque
+            culpa pariatur aliquam amet.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi laborum debitis odio fugiat incidunt
+            a deserunt voluptatum suscipit. Cupiditate asperiores neque magni reiciendis adipisci maiores dignissimos
+            corrupti aliquam consequatur.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit maxime quasi aut exercitationem reiciendis
+            mollitia ex, perspiciatis praesentium nesciunt minima inventore quam, blanditiis dolorum. Eligendi neque
+            culpa pariatur aliquam amet.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut nesciunt quidem numquam dolore quis
+            repellat quae quia atque dolorum est accusamus ullam, voluptate quod eaque, perspiciatis, optio
+            necessitatibus ab.
+        </p>
+    </div>
+    <ng-container *ngIf="showOverlay">
+        <div class="wrapper">
+            <div class="inner-wrapper">
+                <header>
+                    <div class="header-content">
+                        <h2>Header</h2>
+                        <button
+                            type="button"
+                            (click)="toggleOverlay(false)"
+                        >Close</button>
+                    </div>
+                </header>
+                <main>
+                    <div class="item-container">
+                        <ng-container *ngFor="let item of items">
+                            <div class="card">{{item}}</div>
+                        </ng-container>
+                    </div>
+                </main>
+
+                <footer>
+                    <h2>Footer</h2>
+                </footer>
+            </div>
+        </div>
+    </ng-container>
+
+
+</div>
