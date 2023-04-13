@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  items = ['Alice', 'Bob', 'Charlie', 'David', 'Emily'];
+  items = ['Alice', 'Bob', 'Charlie', 'David', 'Emily', 'Frank', 'Gina', 'Henry', 'Isabel', 'Jack'];
   public showOverlay = false;
   public toggleBodyStyles = false;
 

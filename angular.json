@@ -43,10 +43,18 @@
             "outputPath": "dist/safearea-test",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/_redirects", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/_redirects",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -92,6 +100,14 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "safearea-test:build"
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/safearea-test",
+            "netlifyToken": "hhnO44USd0YNLvCr9k6fMXvO17rci5zOx0X4FmKNIOs",
+            "siteId": "04961668-1abf-404d-87b9-badb755db4ad"
           }
         }
       }
